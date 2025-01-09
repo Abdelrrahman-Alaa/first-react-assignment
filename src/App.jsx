@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -8,13 +8,12 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 
 function App() {
-    let routers = createBrowserRouter([
+    let routers = createHashRouter([
         {
             path: "/",
             element: <Layout />,
             children: [
                 { index: true, element: <Home /> },
-                { path: "first-react-assignment", element: <Home /> },
                 { path: "portfolio", element: <Portfolio /> },
                 { path: "contact", element: <Contact /> },
                 { path: "about", element: <About /> },
