@@ -14,6 +14,7 @@ function App() {
             element: <Layout />,
             children: [
                 { index: true, element: <Home /> },
+                { path: "first-react-assignment", element: <Home /> },
                 { path: "portfolio", element: <Portfolio /> },
                 { path: "contact", element: <Contact /> },
                 { path: "about", element: <About /> },
