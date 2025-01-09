@@ -50,18 +50,14 @@ export default function Home() {
     );
 }
  */
-
+import avatar from "/assets/avataaars.svg";
 import React from "react";
 
 export default function Home() {
     return (
         <>
             <div className="flex flex-col flex-wrap items-center justify-center bg-[#1abc9c] p-8 text-white md:p-20">
-                <img
-                    src="src\assets\avataaars.svg"
-                    className="mb-6 w-44 md:w-64"
-                    alt="avatar"
-                />
+                <img src={avatar} className="mb-6 w-44 md:w-64" alt="avatar" />
                 <h1 className="text-2xl font-bold uppercase md:text-4xl">
                     start Framework
                 </h1>
